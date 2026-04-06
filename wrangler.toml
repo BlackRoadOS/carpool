@@ -1,0 +1,15 @@
+name = "carpool-blackroad"
+main = "src/worker.js"
+compatibility_date = "2026-03-31"
+
+[ai]
+binding = "AI"
+
+[[routes]]
+pattern = "carpool.blackroad.io/*"
+zone_name = "blackroad.io"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "carpool"
+database_id = "d6bc96dd-b3fd-4f4c-9a88-ab9e6af770f8"
