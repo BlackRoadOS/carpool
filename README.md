@@ -1,50 +1,43 @@
-# CarPool
+# carpool — BlackRoad OS
 
-*Your AIs, riding together.*
+**Live:** [carpool.blackroad.io](https://carpool.blackroad.io)
+**Part of:** [BlackRoad OS](https://os.blackroad.io) — browser-based desktop with 27 AI agents
 
-The AI-to-AI integration hub that lets every AI you already use share memory and work together inside BlackRoad.
+## Try It
 
-## The Ride
+Open [os.blackroad.io](https://os.blackroad.io) in any browser. No signup required. Click carpool in the dock.
 
-Start CarPool. Your old AIs pile in. ChatGPT conversations, Claude projects, Google docs, Notion pages — CarPool grabs them all and brings them along for the ride. Your AIs talk to each other now.
+Or visit [carpool.blackroad.io](https://carpool.blackroad.io) directly.
 
 ## What It Does
 
-Import hub and orchestration layer that connects external AI services, imports conversation histories, creates a shared memory layer, and enables cross-AI hand-offs with trigger-based automation.
+carpool is one of 17 products in BlackRoad OS, a browser-based operating system running on 5 Raspberry Pi 5 computers with Hailo-8 AI accelerators.
 
-## Integrations
+- **    3108 lines** of working code
+- Workers AI powered (Llama 3.1/3.2)
+- D1 database (SQLite at edge)
+- Part of the 27-agent ecosystem
+- No ads. No tracking. No algorithm.
 
-| Service | Role |
-|---------|------|
-| **Anthropic (Claude)** | Import projects + live inference |
-| **OpenAI (ChatGPT)** | Import conversation exports (JSON) |
-| **DeepSeek** | Reasoning-focused model routing |
-| **Mistral** | Code generation model routing |
-| **Ollama** | Local inference — sovereign, no API keys needed |
-| **Google AI (Gemini)** | Multimodal import and inference |
-| **Hugging Face** | Model hub, custom model inference |
-| **Cloudflare D1** | Shared memory store across all imported AIs |
-| **Cloudflare KV** | Fast context cache for active sessions |
-| **Notion** | Page/database import via API |
+## Stack
 
-## Features
+- Runtime: Cloudflare Workers
+- Database: Cloudflare D1
+- AI: Workers AI
+- Auth: CarKeys (JWT + D1 sessions)
 
-- One-click import from ChatGPT, Claude, Gemini, Notion, Google Docs
-- Shared memory layer — what one AI learns, all AIs can access
-- Trigger-based automation ("When Claude finishes, hand to Pixel for visuals")
-- Agent-to-agent messaging with @mentions and threaded replies
-- Visual conversation map showing every agent's contribution
-- Real-time cost dashboard across all AI providers
-- AI Gateway already LIVE — OpenAI-compatible proxy with model routing, D1 usage tracking, KV cache
+## BlackRoad OS
 
-## Status
+17 products. 27 AI agents. 4 workspaces. Voice commands. Mesh compute. $200 of hardware.
 
-**BUILDING** — AI Gateway Worker is LIVE (model routing for 15+ models, D1 usage tracking, KV cache, Stripe billing)
+- **OS:** [os.blackroad.io](https://os.blackroad.io)
+- **Social:** [backroad.blackroad.io](https://backroad.blackroad.io)
+- **Agents:** [roadtrip.blackroad.io](https://roadtrip.blackroad.io)
+- **Tutor:** [roadie.blackroad.io](https://roadie.blackroad.io)
+- **Search:** [roadview.blackroad.io](https://roadview.blackroad.io)
+- **Code:** [roadcode.blackroad.io](https://roadcode.blackroad.io)
+- **GitHub:** [github.com/BlackRoadOS](https://github.com/BlackRoadOS)
 
-## How It Powers The BlackRoad
+## License
 
-CarPool is the glue that turns solo AIs into a full convoy riding together. It doesn't replace your favorite models — it supercharges them with shared memory and native access to the entire highway.
-
----
-
-Part of [BlackRoad OS](https://blackroad.io) — Remember the Road. Pave Tomorrow.
+PROPRIETARY. Copyright 2025-2026 BlackRoad OS, Inc. All rights reserved.
